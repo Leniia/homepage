@@ -30,7 +30,7 @@ socials:
   Twitter:
   Facebook:
   Slack:
-  tiktok: https://www.tiktok.com/@lenia.musix
+  Tiktok: "https://www.tiktok.com/@lenia.musix"
 
 # build settings
 markdown: kramdown
