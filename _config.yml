@@ -37,6 +37,13 @@ markdown: kramdown
 
 sass:
   style: compressed
+  load_paths:
+    - assets/fontawesome/css
+
+# Ensure these directories are included in the build
+include:
+  - assets/css
+  - assets/webfonts
 
 exclude:
 - "*.gemspec"
