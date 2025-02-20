@@ -8,7 +8,7 @@ nav-menu: true
 
 ## Meine Band
 
-Neben meinen Solo-Auftritten singe ich auch in einer großartigen Band, die für unvergessliche musikalische Erlebnisse sorgt. Unsere Band besteht aus talentierten Musikern, die mit Herzblut und Professionalität jedes Event zu einem Highlight machen.
+Neben meinen Solo-Auftritten singe ich nicht mehr in einer großartigen Band, die für unvergessliche musikalische Erlebnisse sorgt. Unsere Band besteht aus talentierten Musikern, die mit Herzblut und Professionalität jedes Event zu einem Highlight machen.
 
 ### Band-Homepage
 
