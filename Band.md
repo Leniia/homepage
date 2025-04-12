@@ -1,19 +1,15 @@
 ---
 layout: page
-title: Meine Band
-description: Informationen über die Band, in der ich singe
+title: Songwriting
+description: Über meine eigenen Songs
 image: assets/images/band.jpg
 nav-menu: true
 ---
 
-## Meine Band
+## Songwriting – Meine eigene Musik
 
-Neben meinen Solo-Auftritten singe ich nicht mehr in einer großartigen Band, die für unvergessliche musikalische Erlebnisse sorgt. Unsere Band besteht aus talentierten Musikern, die mit Herzblut und Professionalität jedes Event zu einem Highlight machen.
+Neben meinen Auftritten mit Coverliedern habe ich auch eigene Musik geschrieben und veröffentlicht. Songwriting ist für mich eine Möglichkeit, meine Gedanken und Gefühle in Melodien zu verwandeln und Momente musikalisch zu erzählen.
 
-### Band-Homepage
+#### Meine letzte Veröffentlichung:
 
-Mehr Informationen über uns, unsere Musik und bevorstehende Auftritte finden Sie auf unserer [Band-Homepage](https://www.band-homepage.com). Dort können Sie sich auch unsere neuesten Songs anhören und erfahren, wo Sie uns live erleben können.
-
-### Unsere Musik
-
-Unser Repertoire ist vielfältig und reicht von klassischen Hits über moderne Pop-Songs bis hin zu eigenen Kompositionen. Jeder Auftritt ist ein Erlebnis, das sowohl musikalisch als auch emotional überzeugt.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M70AnykBhyY?si=FH2dbq1z1ZWFHYat" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
