@@ -1,6 +1,6 @@
 # site settings
-title: Lenia Musix
-subtitle: Gesang, Band und Musik
+title: Lenia
+subtitle: Gesang, Songwriting und Musik mit Herz
 email:
 description: Vorstellung meiner Passion, Angebote und Projekte 
 baseurl: "/homepage" # the subpath of your site, e.g. /blog
@@ -15,7 +15,7 @@ phone:
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 6
+tiles-count: 2
 
 # social settings (key must match name of font awesome icon)
 # see https://fontawesome.com/icons?d=gallery&p=2&s=brands
@@ -25,8 +25,8 @@ socials:
   GitHub:
   GitLab:
   Google-Plus:
-  Tiktok: "https://www.tiktok.com/@lenia.musix"
-  Instagram: "https://www.instagram.com/lenia_x8"
+  Tiktok: "https://www.tiktok.com/@leniamusic.official"
+  Instagram: "https://www.instagram.com/leniamusic.official/"
   LinkedIn:
   Twitter:
   Facebook:
@@ -54,3 +54,4 @@ exclude:
 - all_posts.md
 - generic.md
 - landing.md
+- band.md
