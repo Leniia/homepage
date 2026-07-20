@@ -2,14 +2,14 @@
 <section id="contact">
 	<div class="inner">
 		<section>
-			<form action="https://formspree.io/{{ site.email }}" method="POST">
+			<form action="{{ site.formspree_endpoint }}" method="POST">
 				<div class="field half first">
 					<label for="name">Name</label>
 					<input type="text" name="name" id="name" />
 				</div>
 				<div class="field half">
 					<label for="email">Email</label>
-					<input type="text" name="_replyto" id="email" />
+					<input type="email" name="email" id="email" />
 				</div>
 				<div class="field">
 					<label for="message">Message</label>
@@ -22,6 +22,7 @@
 			</form>
 		</section>
 		<section class="split">
+			{% if site.email %}
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-envelope"></span>
@@ -29,6 +30,8 @@
 					<a href="mailto:{{ site.email }}">{{ site.email }}</a>
 				</div>
 			</section>
+			{% endif %}
+			{% if site.phone %}
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-phone"></span>
@@ -36,6 +39,8 @@
 					<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
 				</div>
 			</section>
+			{% endif %}
+			{% if site.street_address or site.city or site.state or site.zip_code or site.country %}
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-home"></span>
@@ -59,6 +64,7 @@
 					</span>
 				</div>
 			</section>
+			{% endif %}
 		</section>
 	</div>
 </section>

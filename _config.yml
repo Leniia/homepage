@@ -1,17 +1,27 @@
 # site settings
 title: Lenia
 subtitle: Gesang, Songwriting und Musik mit Herz
-email:
 description: Gesang, Songwriting und Musik mit Herz
 baseurl: "/homepage" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
+
+# Contact info (shown in the footer contact-method section).
+# Leave blank to hide that row on the site. Fill in real values when ready.
+email: # e.g. you@example.com — also used for the mailto: link
+phone: # e.g. +49 123 456789
 street_address:
 city:
 state:
 zip_code:
 country: Deutschland
-phone:
+
+# Contact form (Formspree) — free static form backend, works with GitHub Pages.
+# 1. Sign up at https://formspree.io/ and create a form.
+# 2. Paste the form endpoint URL below (looks like https://formspree.io/f/xxxxxxxx).
+# 3. Redeploy; no other code changes needed.
+# Until you set a real endpoint, submissions will not be delivered.
+formspree_endpoint: "https://formspree.io/f/YOUR_FORM_ID"
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
