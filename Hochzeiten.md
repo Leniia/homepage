@@ -13,7 +13,7 @@ Im Raum Vorderpfalz, Südpfalz und nach Absprache.
 
 ### Repertoire
 
-Mein Repertoire umfasst eine vielfältige Auswahl an Liedern, die ich gerne mit euch gemeinsam abstimme:
+Mein Repertoire ist breit gefächert – die folgenden Titel sind nur eine kleine Auswahl dessen, was möglich ist. Gerne stimmen wir gemeinsam ab, was zu eurem Anlass passt:
 
 - **Klassiker**: Ave Maria, Hallelujah
 - **Pop-Balladen**: All of Me, Perfect
