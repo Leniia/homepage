@@ -7,12 +7,14 @@
 @import 'fontawesome.css';
 @import 'solid.css';
 @import 'brands.css';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap');
 
 /*
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Phase A — Intimate evening stage (Lenia)
 */
 
 	@include skel-breakpoints((
@@ -52,6 +54,20 @@
 		}
 	}
 
+// Design tokens (CSS custom properties)
+	:root {
+		--bg: #1c1a18;
+		--bg-elevated: #262320;
+		--fg: #f3eee6;
+		--fg-muted: #b8b0a4;
+		--accent: #c4a574;
+		--accent-hover: #d4b98a;
+		--focus: #e8d5b5;
+		--overlay: linear-gradient(to top, rgba(28,26,24,.92) 0%, rgba(28,26,24,.35) 55%, rgba(28,26,24,.2) 100%);
+		--font-display: 'Fraunces', Georgia, serif;
+		--font-body: 'Figtree', Helvetica, sans-serif;
+	}
+
 // Base.
 
 	@import 'base/page';
@@ -80,3 +96,5 @@
 	@import 'layout/footer';
 	@import 'layout/wrapper';
 	@import 'layout/menu';
+	@import 'layout/home';
+	@import 'layout/motion';

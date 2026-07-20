@@ -3,37 +3,54 @@
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
+/// Phase A — full-bleed intimate stage hero
+///
 
 /* Banner */
 
 	#banner {
-		@include vendor('align-items', 'center');
-		@include vendor('background-image', 'url("../images/banner.jpg")');
+		@include vendor('align-items', 'flex-end');
 		@include vendor('display', 'flex');
-		@include padding(4em, 0, (2em, 0, 0, 0));
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
+		@include padding(0, 0);
+		background: _palette(bg);
 		border-bottom: 0 !important;
 		cursor: default;
-		height: 60vh;
-		margin-bottom: -3.25em;
-		max-height: 32em;
-		min-height: 22em;
+		height: 100svh;
+		min-height: 100svh;
+		max-height: none;
+		margin-bottom: 0;
 		position: relative;
-		top: -3.25em;
+		top: 0;
+		overflow: hidden;
+
+		&:before {
+			@include vendor('pointer-events', 'none');
+			background-image: url("../images/banner.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 0;
+			transform: scale(1.05);
+			transform-origin: center center;
+		}
 
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');
 			@include vendor('pointer-events', 'none');
-			background-color: _palette(bg);
+			background: var(--overlay);
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 1;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -41,7 +58,36 @@
 		}
 
 		h1 {
-			font-size: 3.25em;
+			font-family: _font(family-display);
+			font-size: clamp(3.25rem, 12vw, 7.5rem);
+			font-weight: 500;
+			letter-spacing: -0.02em;
+			line-height: 1.05;
+			margin: 0 0 0.2em 0;
+			text-transform: none;
+		}
+
+		.hero-headline {
+			font-family: _font(family-display);
+			font-size: clamp(1.35rem, 3.2vw, 2.1rem);
+			font-weight: 400;
+			letter-spacing: 0.01em;
+			line-height: 1.25;
+			margin: 0 0 0.55em 0;
+			max-width: 18em;
+			text-transform: none;
+		}
+
+		.hero-support {
+			color: _palette(fg-muted);
+			font-family: _font(family);
+			font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+			font-weight: 400;
+			letter-spacing: 0.01em;
+			line-height: 1.5;
+			margin: 0 0 1.5em 0;
+			max-width: 28em;
+			text-transform: none;
 		}
 
 		> .inner {
@@ -51,8 +97,11 @@
 				'filter 0.5s ease',
 				'-webkit-filter 0.5s ease'
 			));
-			padding: 0 !important;
+			margin: 0 auto;
+			max-width: _size(inner);
+			padding: 0 1.5em 4.5em !important;
 			position: relative;
+			width: 100%;
 			z-index: 2;
 
 			.image {
@@ -66,41 +115,33 @@
 					width: auto;
 
 					&:after {
-						max-width: 100%;
+						display: none;
 					}
 				}
 			}
 
 			.content {
-				@include vendor('display', 'flex');
-				@include vendor('align-items', 'center');
-				margin: 0 0 _size(element-margin) 0;
+				@include vendor('display', 'block');
+				margin: 0;
 
 				> * {
-					margin-left: 1.5em;
+					margin-left: 0;
 					margin-bottom: 0;
 				}
 
-				> :first-child {
-					margin-left: 0;
-				}
-
-				p {
-					font-size: 0.7em;
-					font-weight: _font(weight-bold);
-					letter-spacing: _font(letter-spacing-alt);
-					text-transform: uppercase;
+				.actions {
+					margin: 0;
 				}
 			}
 		}
 
 		&.major {
-			height: 75vh;
-			min-height: 30em;
-			max-height: 50em;
+			height: 100svh;
+			min-height: 100svh;
+			max-height: none;
 
 			&.alt {
-				  opacity: 0.75;
+				opacity: 0.75;
 			}
 		}
 
@@ -118,48 +159,43 @@
 
 			> .inner {
 				@include vendor('filter', 'blur(0.125em)');
-				@include vendor('transform', 'translateX(-0.5em)');
+				@include vendor('transform', 'translateY(0.5em)');
 				opacity: 0;
 			}
 		}
 
-		@include breakpoint(large) {
-			background-attachment: scroll;
-		}
-
 		@include breakpoint(small) {
-			@include padding(3em, 0, (2em, 0, 0, 0));
-			height: auto;
-			margin-bottom: -2.75em;
+			height: 100svh;
+			min-height: 100svh;
 			max-height: none;
-			min-height: 0;
-			top: -2.75em;
+			margin-bottom: 0;
+			top: 0;
 
 			h1 {
-				font-size: 2em;
+				font-size: clamp(2.75rem, 16vw, 4.5rem);
 			}
 
 			> .inner {
+				padding: 0 1.25em 3.25em !important;
+
 				.content {
 					display: block;
 
 					> * {
 						margin-left: 0;
-						margin-bottom: _size(element-margin);
+						margin-bottom: 0;
 					}
 				}
 			}
 
 			&.major {
-				height: auto;
-				min-height: 0;
+				height: 100svh;
+				min-height: 100svh;
 				max-height: none;
 			}
 		}
 
 		@include breakpoint(xsmall) {
-			@include padding(4em, 0, (2em, 0, 0, 0));
-
 			> .inner {
 				.content {
 					p {
@@ -169,9 +205,25 @@
 					}
 				}
 			}
+		}
+	}
 
-			&.major {
-				@include padding(6em, 0, (2em, 0, 0, 0));
-			}
+	/* Inner-page banners keep a shorter stage */
+	body:not(.is-home) #banner {
+		height: 40vh;
+		min-height: 18em;
+		max-height: 28em;
+
+		> .inner {
+			padding-bottom: 2.5em !important;
+		}
+
+		h1 {
+			font-size: clamp(2rem, 6vw, 3.5rem);
+		}
+
+		@include breakpoint(small) {
+			height: 36vh;
+			min-height: 14em;
 		}
 	}

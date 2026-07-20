@@ -1,23 +1,27 @@
 <!-- Contact -->
-<section id="contact">
+<section id="anfragen">
 	<div class="inner">
 		<section>
+			<header class="major">
+				<h2>Anfragen</h2>
+			</header>
+			<p>Erzähl mir gerne von eurem Anlass — ich melde mich bei dir.</p>
 			<form action="{{ site.formspree_endpoint }}" method="POST">
 				<div class="field half first">
 					<label for="name">Name</label>
-					<input type="text" name="name" id="name" />
+					<input type="text" name="name" id="name" autocomplete="name" />
 				</div>
 				<div class="field half">
-					<label for="email">Email</label>
-					<input type="email" name="email" id="email" />
+					<label for="email">E-Mail</label>
+					<input type="email" name="email" id="email" autocomplete="email" />
 				</div>
 				<div class="field">
-					<label for="message">Message</label>
+					<label for="message">Nachricht</label>
 					<textarea name="message" id="message" rows="6"></textarea>
 				</div>
 				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="special" /></li>
-					<li><input type="reset" value="Clear" /></li>
+					<li><input type="submit" value="Nachricht senden" class="special" /></li>
+					<li><input type="reset" value="Zurücksetzen" /></li>
 				</ul>
 			</form>
 		</section>
@@ -26,7 +30,7 @@
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-solid fa-envelope"></span>
-					<h3>Email</h3>
+					<h3>E-Mail</h3>
 					<a href="mailto:{{ site.email }}">{{ site.email }}</a>
 				</div>
 			</section>
@@ -35,7 +39,7 @@
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-solid fa-phone"></span>
-					<h3>Phone</h3>
+					<h3>Telefon</h3>
 					<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
 				</div>
 			</section>
@@ -44,7 +48,7 @@
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-solid fa-home"></span>
-					<h3>Address</h3>
+					<h3>Adresse</h3>
 					<span>
 					{% if site.street_address %}
 					    {{ site.street_address }}<br />
