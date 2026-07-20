@@ -119,8 +119,32 @@ body.is-home {
 /* Contact block on home uses shared #anfragen id */
 #anfragen {
 	background: _palette(bg-alt);
-}
 
-#anfragen > .inner > :nth-child(2n - 1) {
-	border-right-color: _palette(border);
+	header.major {
+		margin: 0 0 1em 0;
+
+		h2 {
+			font-family: _font(family-display);
+			font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+			font-weight: 500;
+			letter-spacing: -0.01em;
+			line-height: 1.2;
+			text-transform: none;
+		}
+
+		> :first-child:after {
+			background-color: _palette(highlight);
+			max-width: 4em;
+		}
+	}
+
+	> .inner > :nth-child(2n - 1) {
+		border-right-color: _palette(border);
+
+		> p {
+			color: _palette(fg-muted);
+			margin-bottom: 1.5em;
+			max-width: 32em;
+		}
+	}
 }

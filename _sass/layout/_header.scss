@@ -41,23 +41,25 @@
 					'background-color #{_duration(transition)} ease-in-out',
 					'color #{_duration(transition)} ease-in-out'
 				));
-				background-color: _palette(fg-bold);
+				background-color: _palette(highlight);
 				color: _palette(bg);
 				display: inline-block;
+				font-family: _font(family);
+				font-weight: 700;
 				line-height: 1.65em;
 				margin-right: 0.325em;
-				padding: 0 0.125em 0 (_font(letter-spacing-alt) + 0.125em);
+				padding: 0 0.35em;
 			}
 
 			&:hover {
 				strong {
-					background-color: _palette(highlight);
+					background-color: _palette(accent-hover);
 				}
 			}
 
 			&:active {
 				strong {
-					background-color: desaturate(darken(_palette(highlight), 15), 5);
+					background-color: darken(_palette(highlight), 8);
 				}
 			}
 		}
