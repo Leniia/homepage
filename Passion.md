@@ -3,7 +3,7 @@ layout: page
 title: Meine Passion
 description: Musik und Gesang
 image: assets/images/passion.jpg
-nav-menu: true
+nav-menu: false
 ---
 
 ## Musik ist meine Leidenschaft

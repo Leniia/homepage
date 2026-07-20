@@ -3,25 +3,30 @@
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Phase A — Intimate evening stage home
 -->
-<html>
+<html lang="de">
 
 {% include head.html %}
 
-<body>
+<body class="is-home">
+    <script type="text/javascript">document.body.classList.add("is-loading");</script>
 
     {% include header.html %}
 
-    <!-- Banner -->
-    <section id="banner" class="major">
+    <!-- Hero -->
+    <section id="banner" class="major" aria-label="Lenia">
         <div class="inner">
             <header class="major">
-                <h1>{{ page.landing-title }}</h1>
+                <h1>Lenia</h1>
             </header>
             <div class="content">
-                <p style="text-transform: uppercase;">{{ site.description }}</p>
-                <ul class="actions">
-                    <li><a href="#one" class="button next scrolly">Mehr</a></li>
+                <p class="hero-headline">Gesang für eure besonderen Momente</p>
+                <p class="hero-support">Hochzeiten &amp; Feiern in Rheinland-Pfalz — und weiter nach Absprache</p>
+                <ul class="actions hero-actions">
+                    <li><a href="#anfragen" class="button special scrolly">Anfragen</a></li>
+                    <li><a href="#hoeren" class="button scrolly">Hören</a></li>
                 </ul>
             </div>
         </div>
@@ -30,26 +35,95 @@
     <!-- Main -->
     <div id="main">
 
-        <!-- One -->
-        {% include tiles.html %}
-
-        <!-- Two -->
-	<!-- not used right now. we only show the tiles
-        <section id="two">
+        <!-- Proof / listen -->
+        <section id="hoeren" class="home-section">
             <div class="inner">
                 <header class="major">
-                    <h2>Massa libero</h2>
+                    <h2>So klingt's</h2>
                 </header>
-                <p>{{ content }}</p>
+                <p class="section-lead">Ein kleiner Eindruck — Stimme, Stimmung, Nähe.</p>
+                <div class="home-video">
+                    <iframe
+                        src="https://www.youtube.com/embed/M70AnykBhyY"
+                        title="Lenia — So klingt's"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Angebot -->
+        <section id="angebot" class="home-section is-elevated">
+            <div class="inner">
+                <header class="major">
+                    <h2>Für eure Feier</h2>
+                </header>
+                <p>Ob Hochzeit, Taufe oder Jubiläum — ich begleite euch mit einfühlsamem Gesang. Persönlich, individuell und mit viel Herz, ganz nach euren Wünschen. Im Raum Rheinland-Pfalz — und weiter nach Absprache.</p>
                 <ul class="actions">
-                    <li><a href="landing.html" class="button next">Get Started</a></li>
+                    <li><a href="{{ '/Hochzeiten.html' | relative_url }}" class="button next">Veranstaltungen &amp; Hochzeiten</a></li>
                 </ul>
             </div>
         </section>
-	-->
+
+        <!-- Über mich -->
+        <section id="ueber-mich" class="home-section">
+            <div class="inner">
+                <header class="major">
+                    <h2>Über mich</h2>
+                </header>
+                <p>Musik und Gesang sind mehr als ein Hobby für mich — sie sind meine Leidenschaft. Jeder Auftritt, ob groß oder klein, ist eine Herzensangelegenheit. Auf Instagram teile ich Proben, Auftritte und Lieblingssongs mit dir.</p>
+                <ul class="actions">
+                    <li><a href="https://www.instagram.com/leniamusic.official" class="button" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Songs teaser -->
+        <section id="songs" class="home-section is-elevated">
+            <div class="inner">
+                <header class="major">
+                    <h2>Eigene Songs</h2>
+                </header>
+                <p>Neben Coverliedern schreibe und veröffentliche ich eigene Musik — Gedanken und Gefühle in Melodien, die Momente erzählen.</p>
+                <ul class="actions">
+                    <li><a href="{{ '/Songwriting.html' | relative_url }}" class="button next">Zum Songwriting</a></li>
+                </ul>
+            </div>
+        </section>
+
     </div>
 
     {% include footer.html %}
+
+    <script>
+    (function () {
+        var sections = document.querySelectorAll('.home-section');
+        if (!sections.length) return;
+
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            sections.forEach(function (el) { el.classList.add('is-visible'); });
+            return;
+        }
+
+        if (!('IntersectionObserver' in window)) {
+            sections.forEach(function (el) { el.classList.add('is-visible'); });
+            return;
+        }
+
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+
+        sections.forEach(function (el) { observer.observe(el); });
+    })();
+    </script>
 
 </body>
 
