@@ -1,6 +1,12 @@
 _site/
 .sass-cache/
 .jekyll-metadata
-Gemfile.lock
-*.gem
 .jekyll-cache
+*.gem
+
+# Local Bundler install (do not commit — CI installs its own Linux gems)
+.bundle/
+vendor/
+
+# Keep lockfile tracked so CI and local installs match
+# (Gemfile.lock is committed; do not ignore it)
