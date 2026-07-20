@@ -27,10 +27,11 @@ formspree_endpoint: "https://formspree.io/f/YOUR_FORM_ID"
 tiles-source: pages # accepts "posts" or "pages"
 tiles-count: 3
 
-# social settings (key must match name of font awesome icon)
-# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
+# social settings (key must match Font Awesome 6 Brands icon name, e.g. Tiktok -> fa-tiktok)
+# see https://fontawesome.com/search?o=r&f=brands
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
+# Font Awesome Free 6.6.0 is vendored under assets/css/ + assets/webfonts/ (no CDN)
 socials:
   GitHub:
   GitLab:
@@ -47,13 +48,6 @@ markdown: kramdown
 
 sass:
   style: compressed
-  load_paths:
-    - assets/fontawesome/css
-
-# Ensure these directories are included in the build
-include:
-  - assets/css
-  - assets/webfonts
 
 exclude:
 - "*.gemspec"

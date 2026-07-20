@@ -15,6 +15,13 @@
 			display: none;
 		}
 
+		/* FA6 brands: theme applies font on :before; override Free/solid default */
+		&.fa-brands:before,
+		&.fab:before {
+			font-family: "Font Awesome 6 Brands";
+			font-weight: 400;
+		}
+
 		&.alt {
 			&:before {
 				background-color: _palette(fg-bold);

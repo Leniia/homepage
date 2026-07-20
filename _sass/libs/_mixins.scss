@@ -1,4 +1,4 @@
-/// Makes an element's :before pseudoelement a FontAwesome icon.
+/// Makes an element's :before pseudoelement a Font Awesome 6 Free (solid) icon.
 /// @param {string} $content Optional content value to use.
 /// @param {string} $where Optional pseudoelement to target (before or after).
 @mixin icon($content: false, $where: before) {
@@ -13,9 +13,9 @@
 
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
-		font-family: FontAwesome;
+		font-family: "Font Awesome 6 Free";
 		font-style: normal;
-		font-weight: normal;
+		font-weight: 900;
 		text-transform: none !important;
 
 	}

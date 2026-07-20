@@ -1,0 +1,6 @@
+{
+  "terminal.integrated.env.windows": {
+    "PATH": "C:\\Ruby31-x64\\bin;${env:PATH}",
+    "SSL_CERT_FILE": "C:\\Ruby31-x64\\ssl\\cert.pem"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Jekyll: Serve & Open in Browser",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://127.0.0.1:4000/homepage/",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "jekyll: serve"
+    },
+    {
+      "name": "Jekyll: Serve & Open in Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://127.0.0.1:4000/homepage/",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "jekyll: serve"
+    }
+  ]
+}
