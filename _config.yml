@@ -21,7 +21,7 @@ country: Deutschland
 # 2. Paste the form endpoint URL below (looks like https://formspree.io/f/xxxxxxxx).
 # 3. Redeploy; no other code changes needed.
 # Until you set a real endpoint, submissions will not be delivered.
-formspree_endpoint: "https://formspree.io/f/YOUR_FORM_ID"
+formspree_endpoint: "https://formspree.io/f/xvzevplv"
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
