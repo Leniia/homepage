@@ -1,16 +1,18 @@
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
 <!-- Wrapper -->
 <div id="wrapper">
 
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
 	<a href="{{ "" | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
-	<nav>
-		<a href="#menu">Menü</a>
+	<nav aria-label="Hauptnavigation">
+		<a href="#menu" id="menu-toggle" aria-controls="menu" aria-expanded="false">Menü</a>
 	</nav>
 </header>
 
 <!-- Menu -->
-<nav id="menu">
+<nav id="menu" aria-label="Menü" aria-hidden="true">
 	<ul class="links">
         {% for page in site.pages %}
 		    {% if page.layout == "home" %}

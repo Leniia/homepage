@@ -53,8 +53,4 @@ exclude:
 - "*.gemspec"
 - LICENSE.md
 - CONTRIBUTING.md
-- README.md 
-- elements.md
-- all_posts.md
-- generic.md
-- landing.md
+- README.md

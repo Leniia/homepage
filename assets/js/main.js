@@ -271,22 +271,32 @@
 
 			$menu._show = function() {
 
-				if ($menu._lock())
+				if ($menu._lock()) {
 					$body.addClass('is-menu-visible');
+					$menu.attr('aria-hidden', 'false');
+					$('#menu-toggle').attr('aria-expanded', 'true');
+				}
 
 			};
 
 			$menu._hide = function() {
 
-				if ($menu._lock())
+				if ($menu._lock()) {
 					$body.removeClass('is-menu-visible');
+					$menu.attr('aria-hidden', 'true');
+					$('#menu-toggle').attr('aria-expanded', 'false');
+				}
 
 			};
 
 			$menu._toggle = function() {
 
-				if ($menu._lock())
+				if ($menu._lock()) {
 					$body.toggleClass('is-menu-visible');
+					var isVisible = $body.hasClass('is-menu-visible');
+					$menu.attr('aria-hidden', isVisible ? 'false' : 'true');
+					$('#menu-toggle').attr('aria-expanded', isVisible ? 'true' : 'false');
+				}
 
 			};
 
@@ -321,7 +331,7 @@
 					$body.removeClass('is-menu-visible');
 
 				})
-				.append('<a class="close" href="#menu">Close</a>');
+				.append('<a class="close" href="#menu" aria-label="Schließen">Schließen</a>');
 
 			$body
 				.on('click', 'a[href="#menu"]', function(event) {
