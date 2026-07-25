@@ -1,0 +1,9 @@
+{% assign video_id = include.id %}
+{% assign video_title = include.title | default: 'YouTube-Video' %}
+{% assign poster = include.poster | default: 'assets/images/band.jpg' %}
+<div class="youtube-facade home-video" data-youtube-id="{{ video_id }}" data-youtube-title="{{ video_title }}" style="background-image: url('{{ poster | relative_url }}');">
+	<button type="button" class="youtube-facade__play" aria-label="{{ video_title }} abspielen">
+		<span class="youtube-facade__play-icon" aria-hidden="true"></span>
+	</button>
+	<p class="youtube-facade__notice">Mit Klick werden Inhalte von YouTube geladen. Details in der <a href="{{ '/Datenschutz.html' | relative_url }}#youtube">Datenschutzerklärung</a>.</p>
+</div>

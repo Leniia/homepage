@@ -7,7 +7,6 @@
 @import 'fontawesome.css';
 @import 'solid.css';
 @import 'brands.css';
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap');
 
 /*
 	Forty by HTML5 UP
@@ -70,6 +69,7 @@
 
 // Base.
 
+	@import 'base/fonts';
 	@import 'base/page';
 	@import 'base/typography';
 
@@ -86,6 +86,8 @@
 	@import 'components/tiles';
 	@import 'components/contact-method';
 	@import 'components/spotlights';
+	@import 'components/youtube-facade';
+	@import 'components/legal';
 
 // Layout.
 

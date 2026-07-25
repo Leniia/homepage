@@ -1,0 +1,81 @@
+<div class="legal-content">
+	<h2>Angaben gemäß § 5 DDG</h2>
+
+	<h3>Anbieter</h3>
+	<p>
+		{% if site.operator_name %}
+			<strong>{{ site.operator_name }}</strong>
+		{% else %}
+			<span class="legal-placeholder">[Bitte <code>operator_name</code> in <code>_config.yml</code> eintragen]</span>
+		{% endif %}
+		{% if site.legal_form %}<br />{{ site.legal_form }}{% endif %}
+	</p>
+
+	<h3>Anschrift</h3>
+	<p>
+		{% if site.street_address or site.city or site.zip_code or site.country %}
+			{% if site.street_address %}{{ site.street_address }}<br />{% endif %}
+			{% if site.zip_code or site.city %}
+				{% if site.zip_code %}{{ site.zip_code }} {% endif %}{% if site.city %}{{ site.city }}{% endif %}{% if site.state %}, {{ site.state }}{% endif %}<br />
+			{% endif %}
+			{% if site.country %}{{ site.country }}{% endif %}
+		{% else %}
+			<span class="legal-placeholder">[Bitte Adressfelder in <code>_config.yml</code> eintragen: <code>street_address</code>, <code>zip_code</code>, <code>city</code>, <code>country</code>]</span>
+		{% endif %}
+	</p>
+
+	<h3>Kontakt</h3>
+	<p>
+		{% if site.email %}
+			E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
+		{% else %}
+			E-Mail: <span class="legal-placeholder">[Bitte <code>email</code> in <code>_config.yml</code> eintragen]</span><br />
+		{% endif %}
+		{% if site.phone %}
+			Telefon: <a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+		{% endif %}
+	</p>
+
+	{% if site.vat_id %}
+	<h3>Umsatzsteuer-ID</h3>
+	<p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: {{ site.vat_id }}</p>
+	{% endif %}
+
+	{% if site.trade_register %}
+	<h3>Handelsregister</h3>
+	<p>{{ site.trade_register }}</p>
+	{% endif %}
+
+	{% if site.professional_rules %}
+	<h3>Berufsrechtliche Angaben</h3>
+	<p>{{ site.professional_rules }}</p>
+	{% endif %}
+
+	<h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
+	<p>
+		{% if site.responsible_person %}
+			{{ site.responsible_person }}
+			{% if site.street_address or site.city %}
+				<br />
+				{% if site.street_address %}{{ site.street_address }}, {% endif %}
+				{% if site.zip_code %}{{ site.zip_code }} {% endif %}{% if site.city %}{{ site.city }}{% endif %}
+			{% endif %}
+		{% else %}
+			<span class="legal-placeholder">[Bitte <code>responsible_person</code> in <code>_config.yml</code> eintragen]</span>
+		{% endif %}
+	</p>
+
+	<h3>Streitschlichtung</h3>
+	<p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.</p>
+	<p>
+		{% if site.dispute_resolution %}
+			{{ site.dispute_resolution }}
+		{% else %}
+			Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen, sofern nicht in <code>_config.yml</code> unter <code>dispute_resolution</code> anders angegeben.
+		{% endif %}
+	</p>
+
+	{% if site.title and site.title != site.operator_name %}
+	<p><em>Künstlername / Website: {{ site.title }}{% if site.subtitle %} — {{ site.subtitle }}{% endif %}</em></p>
+	{% endif %}
+</div>

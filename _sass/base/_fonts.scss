@@ -1,0 +1,84 @@
+///
+/// Self-hosted web fonts (Figtree, Fraunces)
+/// Licensed under SIL Open Font License 1.1 — see assets/fonts/
+///
+
+@font-face {
+	font-family: 'Figtree';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('../fonts/figtree/figtree-400.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Figtree';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url('../fonts/figtree/figtree-400-italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Figtree';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('../fonts/figtree/figtree-500.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Figtree';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('../fonts/figtree/figtree-600.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Figtree';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('../fonts/figtree/figtree-700.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Fraunces';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('../fonts/fraunces/fraunces-400.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Fraunces';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url('../fonts/fraunces/fraunces-400-italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Fraunces';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('../fonts/fraunces/fraunces-500.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Fraunces';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('../fonts/fraunces/fraunces-600.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Fraunces';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('../fonts/fraunces/fraunces-700.ttf') format('truetype');
+}

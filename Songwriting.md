@@ -12,4 +12,4 @@ Neben meinen Auftritten mit Coverliedern habe ich auch eigene Musik geschrieben 
 
 #### Meine letzte Veröffentlichung hören:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/M70AnykBhyY?si=FH2dbq1z1ZWFHYat" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include youtube-facade.html id="M70AnykBhyY" title="Lenia — So klingt's" poster="assets/images/band.jpg" %}

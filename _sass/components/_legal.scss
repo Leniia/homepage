@@ -1,0 +1,34 @@
+///
+/// Legal page helpers
+///
+
+.legal-notice {
+	background: _palette(border-bg);
+	border-left: 3px solid _palette(highlight);
+	margin: 0 0 2em 0;
+	padding: 1em 1.25em;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.legal-placeholder {
+	color: _palette(fg-muted);
+	font-style: italic;
+}
+
+.legal-content {
+	h2, h3 {
+		margin-top: 1.75em;
+	}
+
+	h2:first-child,
+	h3:first-child {
+		margin-top: 0;
+	}
+
+	ul {
+		margin-bottom: 1em;
+	}
+}

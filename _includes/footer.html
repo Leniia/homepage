@@ -19,6 +19,10 @@
 					<label for="message">Nachricht</label>
 					<textarea name="message" id="message" rows="6"></textarea>
 				</div>
+				<div class="field">
+					<input type="checkbox" name="privacy_ack" id="privacy_ack" value="yes" required />
+					<label for="privacy_ack">Ich habe die <a href="{{ '/Datenschutz.html' | relative_url }}">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben zum Zweck der Kontaktaufnahme einverstanden.</label>
+				</div>
 				<ul class="actions">
 					<li><input type="submit" value="Nachricht senden" class="special" /></li>
 					<li><input type="reset" value="Zurücksetzen" /></li>
@@ -89,9 +93,10 @@
 			</ul>
 			<ul class="copyright">
 				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
-				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
-				<li>Jekyll integration: <a href="https://github.com/andrewbanchich" target="_blank">Andrew Banchich</a></li>
-
+				<li><a href="{{ '/Impressum.html' | relative_url }}">Impressum</a></li>
+				<li><a href="{{ '/Datenschutz.html' | relative_url }}">Datenschutz</a></li>
+				<li>Design: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
+				<li>Jekyll integration: <a href="https://github.com/andrewbanchich" target="_blank" rel="noopener noreferrer">Andrew Banchich</a></li>
 			</ul>
 		</div>
 	</footer>
@@ -106,3 +111,4 @@
 	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
 	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
 	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/youtube-facade.js" | absolute_url }}"></script>

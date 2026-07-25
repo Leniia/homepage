@@ -1,0 +1,87 @@
+<div class="legal-content">
+	<h2 id="verantwortlicher">1. Verantwortlicher</h2>
+	<p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+	<p>
+		{% if site.operator_name %}
+			<strong>{{ site.operator_name }}</strong>
+		{% else %}
+			<span class="legal-placeholder">[Bitte <code>operator_name</code> in <code>_config.yml</code> eintragen]</span>
+		{% endif %}
+		<br />
+		{% if site.street_address %}{{ site.street_address }}<br />{% endif %}
+		{% if site.zip_code or site.city %}{% if site.zip_code %}{{ site.zip_code }} {% endif %}{% if site.city %}{{ site.city }}{% endif %}<br />{% endif %}
+		{% if site.country %}{{ site.country }}<br />{% endif %}
+		{% if site.email %}
+			E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+		{% else %}
+			E-Mail: <span class="legal-placeholder">[Bitte <code>email</code> in <code>_config.yml</code> eintragen]</span>
+		{% endif %}
+	</p>
+
+	<h2 id="ueberblick">2. Überblick der Verarbeitungen</h2>
+	<p>Diese Website informiert über musikalische Leistungen und ermöglicht die Kontaktaufnahme zu Buchungsanfragen. Dabei werden personenbezogene Daten nur verarbeitet, soweit dies für den Betrieb der Website, die Kommunikation oder aufgrund Ihrer Einwilligung erforderlich ist.</p>
+	<p>Derzeit werden auf dieser Website <strong>keine Webanalyse- oder Marketing-Tracking-Tools</strong> eingesetzt. Es wird kein allgemeiner Cookie-Banner angezeigt, weil keine nicht notwendigen Cookies oder vergleichbare Technologien ohne Ihre Handlung gesetzt werden.</p>
+
+	<h2 id="hosting">3. Hosting (GitHub Pages)</h2>
+	<p>Diese Website wird über <strong>GitHub Pages</strong> bereitgestellt. Anbieter ist die GitHub, Inc., 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA (Teil der Microsoft-Gruppe).</p>
+	<p>Beim Aufruf der Website werden durch den Hosting-Anbieter automatisch Informationen in sogenannten Server-Logfiles erhoben, z. B. IP-Adresse, Datum und Uhrzeit des Abrufs, angeforderte URL, Referrer-URL, Browsertyp und Betriebssystem. Die Verarbeitung erfolgt zur Bereitstellung und Sicherheit der Website auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.</p>
+	<p>Weitere Informationen: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.</p>
+	<p>Sofern personenbezogene Daten in die USA übermittelt werden, kann dies auf Standardvertragsklauseln oder vergleichbare Garantien gestützt werden — bitte rechtlich prüfen.</p>
+
+	<h2 id="schriftarten">4. Lokal gehostete Schriftarten</h2>
+	<p>Zur einheitlichen Darstellung verwenden wir die Schriftarten <strong>Figtree</strong> und <strong>Fraunces</strong>. Die Schriftdateien werden <strong>lokal von diesem Webserver</strong> aus dem Verzeichnis <code>assets/fonts/</code> geladen. Beim Seitenaufruf werden dabei keine Anfragen an Google Fonts oder andere externe Schrift-CDNs gesendet.</p>
+	<p>Die Schriftarten stehen unter der <a href="https://scripts.sil.org/OFL" target="_blank" rel="noopener noreferrer">SIL Open Font License 1.1</a>.</p>
+
+	<h2 id="kontaktformular">5. Kontaktformular (Formspree)</h2>
+	<p>Wenn Sie das Kontaktformular nutzen, verarbeiten wir die von Ihnen eingegebenen Daten (z. B. Name, E-Mail-Adresse, Nachricht) zur Bearbeitung Ihrer Anfrage.</p>
+	<p>Die Übermittlung erfolgt über den Dienst <strong>Formspree</strong> (Formspree Inc., USA). Dabei werden Ihre Angaben an Formspree übertragen und dort verarbeitet, bevor sie an uns weitergeleitet werden.</p>
+	<p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Kommunikation) bzw. Art. 6 Abs. 1 lit. a DSGVO, sofern Sie dem zustimmen. Die Einwilligung können Sie jederzeit widerrufen.</p>
+	<p>Weitere Informationen: <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Formspree Privacy Policy</a>.</p>
+	{% if site.formspree_endpoint %}
+	<p>Verwendeter Formular-Endpunkt: <code>{{ site.formspree_endpoint }}</code></p>
+	{% endif %}
+
+	<h2 id="youtube">6. Eingebettete YouTube-Videos</h2>
+	<p>Auf einzelnen Seiten können YouTube-Videos angeboten werden. <strong>Es wird kein YouTube-iframe geladen, bevor Sie aktiv auf „Video abspielen“ klicken.</strong> Erst mit diesem Klick werden Inhalte von YouTube (Google Ireland Limited / Google LLC) nachgeladen; dabei können Cookies oder vergleichbare Technologien gesetzt und Nutzungsdaten an YouTube übermittelt werden.</p>
+	<p>Rechtsgrundlage ist Ihre Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO, die Sie durch Klick auf die Wiedergabe erteilen. Die Einwilligung können Sie verweigern, indem Sie das Video nicht abspielen.</p>
+	<p>Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Datenschutzerklärung</a>.</p>
+
+	<h2 id="social">7. Links zu Social-Media-Profilen</h2>
+	<p>Diese Website enthält Links zu externen Profilen. Beim bloßen Aufruf unserer Website werden keine Daten an die Netzwerke übermittelt. Erst wenn Sie einen Link anklicken, verlassen Sie unsere Website und es gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
+	<ul>
+		{% assign has_social = false %}
+		{% for key_value in site.socials %}
+			{% if key_value[1] %}
+				{% assign has_social = true %}
+				<li><strong>{{ key_value[0] }}</strong>: <a href="{{ key_value[1] }}" target="_blank" rel="noopener noreferrer">{{ key_value[1] }}</a></li>
+			{% endif %}
+		{% endfor %}
+		{% unless has_social %}
+			<li><span class="legal-placeholder">Derzeit sind keine Social-Media-Profile in <code>_config.yml</code> hinterlegt.</span></li>
+		{% endunless %}
+	</ul>
+
+	<h2 id="externe-links">8. Externe Links</h2>
+	<p>Weitere externe Verlinkungen (z. B. zu Instagram oder YouTube außerhalb eingebetteter Videos) führen zu Websites Dritter. Für deren Inhalte und Datenverarbeitung sind ausschließlich die jeweiligen Betreiber verantwortlich.</p>
+
+	<h2 id="speicherdauer">9. Speicherdauer</h2>
+	<p>Personenbezogene Daten werden nur so lange gespeichert, wie es für die genannten Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen. Anfragen über das Kontaktformular werden gelöscht, sobald die Anfrage abschließend bearbeitet ist, sofern keine gesetzlichen Pflichten entgegenstehen.</p>
+
+	<h2 id="rechte">10. Ihre Rechte</h2>
+	<p>Sie haben gegenüber uns insbesondere folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:</p>
+	<ul>
+		<li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+		<li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+		<li>Recht auf Löschung (Art. 17 DSGVO)</li>
+		<li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+		<li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+		<li>Recht auf Widerspruch (Art. 21 DSGVO)</li>
+		<li>Recht auf Widerruf erteilter Einwilligungen (Art. 7 Abs. 3 DSGVO)</li>
+		<li>Recht auf Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)</li>
+	</ul>
+
+	<h2 id="aenderungen">11. Änderungen dieser Datenschutzerklärung</h2>
+	<p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, wenn sich die Website, eingesetzte Dienste oder Rechtslage ändern. Die jeweils aktuelle Fassung ist auf dieser Seite abrufbar.</p>
+
+	<p><em>Stand: {% assign today = 'now' | date: '%d.%m.%Y' %}{{ today }}</em></p>
+</div>

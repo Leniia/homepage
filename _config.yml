@@ -6,6 +6,15 @@ baseurl: "/homepage" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
 
+# Legal / Impressum (§ 5 DDG) — fill in before publishing; placeholders are shown until set.
+operator_name:       # Legal name of the site operator
+legal_form:          # e.g. Einzelunternehmen, Freiberuflerin
+vat_id:              # USt-IdNr., if applicable
+trade_register:      # Handelsregister entry, if applicable
+responsible_person:  # Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
+professional_rules:  # Berufsrechtliche Angaben, if applicable
+dispute_resolution:  # Optional: participation in consumer arbitration
+
 # Contact info (shown in the footer contact-method section).
 # Leave blank to hide that row on the site. Fill in real values when ready.
 email: # e.g. you@example.com — also used for the mailto: link
