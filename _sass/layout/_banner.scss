@@ -215,7 +215,8 @@
 	}
 
 	/* Inner-page banners keep a shorter stage */
-	body:not(.is-home) #banner {
+	body:not(.is-home) #banner,
+	#banner.page-hero {
 		height: 40vh;
 		min-height: 18em;
 		max-height: 28em;
