@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Veranstaltungen
-description: Gesang für feierliche Anlässe in der Pfalz
+description: Gesang für feierliche Anlässe – in der Pfalz und deutschlandweit
 image: assets/images/hochzeit.jpg
 nav-menu: true
 ---
@@ -9,7 +9,7 @@ nav-menu: true
 ## Gesang für besondere Momente
 Ob Hochzeit, Taufe oder Jubiläum – ich begleite feierliche Anlässe mit einfühlsamem Gesang.
 Mein Angebot ist persönlich, individuell und mit viel Herz gestaltet – ganz nach euren Wünschen.
-Im Raum Vorderpfalz, Südpfalz und nach Absprache.
+Gesang für feierliche Anlässe – in der Pfalz und deutschlandweit.
 
 ### Repertoire
 
