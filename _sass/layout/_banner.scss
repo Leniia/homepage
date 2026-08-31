@@ -26,7 +26,8 @@
 		&:before {
 			@include vendor('pointer-events', 'none');
 			background-image: url("../images/banner.jpg");
-			background-position: center;
+			// Subject sits right-of-center; keep face + mic visible beside bottom-left copy.
+			background-position: 72% center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			content: '';
@@ -39,6 +40,7 @@
 			z-index: 0;
 			transform: scale(1.05);
 			transform-origin: center center;
+			@include vendor('filter', 'contrast(1.06) brightness(0.92)');
 		}
 
 		&:after {
@@ -170,6 +172,10 @@
 			max-height: none;
 			margin-bottom: 0;
 			top: 0;
+
+			&:before {
+				background-position: 78% 28%;
+			}
 
 			h1 {
 				font-size: clamp(2.75rem, 16vw, 4.5rem);
