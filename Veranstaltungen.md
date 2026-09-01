@@ -8,12 +8,12 @@ nav-menu: true
 
 ## Gesang für besondere Momente
 
-Ob Hochzeit, Taufe oder Jubiläum — ich begleite eure Feier mit einfühlsamem Gesang. Persönlich, individuell und mit viel Herz, ganz nach euren Wünschen.
+Manche Momente bleiben – und die richtige Musik macht sie noch ein bisschen besonderer. Ob Hochzeit, Taufe, Jubiläum oder ein anderer persönlicher Anlass: Ich begleite eure Feier mit Live-Gesang, der zu euch und eurem Moment passt.
 
-### Musik für euren Anlass
+### Eure Musik, euer Moment
 
-Ob klassisch, modern oder ganz persönlich — ich wähle Lieder, die zu eurem Moment passen. Von feierlichen Klassikern über romantische Balladen bis zu eurem individuellen Songwunsch: Wir stimmen gemeinsam ab, was eure Feier unvergesslich macht.
+Von gefühlvollen Balladen bis zu modernen Songs: Gemeinsam finden wir die Musik, die zu eurem Anlass passt. Habt ihr ein Lied, das für euch eine besondere Bedeutung hat? Dann sprecht mich gerne darauf an – individuelle Songwünsche sind ausdrücklich willkommen.
 
 ### Anfrage
 
-Wenn ihr Interesse habt, mich für eure Veranstaltung zu buchen, schreibt mir gerne — ich freue mich darauf, euren Tag mit Musik zu bereichern.
+Schreibt mir einfach, wann und wo ihr feiert und für welchen Anlass ihr musikalische Begleitung sucht. Ich melde mich bei euch und wir besprechen unverbindlich, was ihr euch vorstellt.
