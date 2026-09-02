@@ -15,6 +15,14 @@
 					<label for="email">E-Mail</label>
 					<input type="email" name="email" id="email" autocomplete="email" />
 				</div>
+				<div class="field half first">
+					<label for="event-location">Veranstaltungsort</label>
+					<input type="text" name="Veranstaltungsort" id="event-location" />
+				</div>
+				<div class="field half">
+					<label for="event-date">Datum</label>
+					<input type="date" name="Datum" id="event-date" />
+				</div>
 				<div class="field">
 					<label for="message">Nachricht</label>
 					<textarea name="message" id="message" rows="6"></textarea>
@@ -44,23 +52,32 @@
 				</div>
 			</section>
 			{% endif %}
-			{% if site.street_address or site.city or site.state or site.zip_code or site.country %}
+			{% if site.company or site.care_of or site.street_address or site.city or site.state or site.zip_code or site.country %}
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-solid fa-home"></span>
 					<h3>Adresse</h3>
 					<span>
+					{% if site.company %}
+					    {{ site.company }}<br />
+					{% endif %}
+					{% if site.care_of %}
+					    {{ site.care_of }}<br />
+					{% endif %}
 					{% if site.street_address %}
 					    {{ site.street_address }}<br />
 					{% endif %}
+					{% if site.zip_code %}
+					    {{ site.zip_code }}
+					{% endif %}
 					{% if site.city %}
-					    {{ site.city }},
+					    {{ site.city }}
 					{% endif %}
 					{% if site.state %}
-					    {{ site.state }} 
+					    {{ site.state }}
 					{% endif %}
-					{% if site.zip_code %}
-					    {{ site.zip_code }}<br />
+					{% if site.zip_code or site.city or site.state %}
+					    <br />
 					{% endif %}
 					{% if site.country %}
 					    {{ site.country }}

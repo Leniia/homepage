@@ -2,18 +2,20 @@
 title: Lenia
 subtitle: Gesang, Songwriting und Musik mit Herz
 description: Gesang, Songwriting und Musik mit Herz
-baseurl: "/homepage" # the subpath of your site, e.g. /blog
-url: "https://leniia.github.io"
+baseurl: ""
+url: "https://leniamusic.com"
 author:
 
 # Contact info (shown in the footer contact-method section).
 # Leave blank to hide that row on the site. Fill in real values when ready.
 email: bookings@leniamusic.com
 phone: # e.g. +49 123 456789
-street_address:
-city:
+company: Lenia Music
+care_of: c/o SourceArt
+street_address: Fritz-Thiele-Straße 3
+city: Bremen-Obervieland
 state:
-zip_code:
+zip_code: "28279"
 country: Deutschland
 
 # Contact form (Formspree) — free static form backend, works with GitHub Pages.
