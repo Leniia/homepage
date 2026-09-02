@@ -174,7 +174,10 @@
 			top: 0;
 
 			&:before {
-				background-position: 78% 28%;
+				background-color: #d8d8d8;
+				background-position: 68% center;
+				background-size: auto 92%;
+				transform: scale(1);
 			}
 
 			h1 {
