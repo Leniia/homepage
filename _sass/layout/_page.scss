@@ -104,16 +104,41 @@ body.is-page {
 
 	&--spotify {
 		aspect-ratio: auto;
-		height: 152px;
-		max-height: 152px;
-		background: transparent;
+		min-height: 152px;
+		background: _palette(bg-alt);
 		overflow: hidden;
 		border-radius: 12px;
+
+		&.is-loaded {
+			height: 152px;
+			background: transparent;
+		}
 
 		iframe {
 			border-radius: 12px;
 			aspect-ratio: auto;
 			height: 100%;
 		}
+	}
+}
+
+.external-media-consent {
+	@include padding(1.5em, 1.75em);
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+
+	p {
+		margin: 0;
+		max-width: 46em;
+	}
+
+	.button {
+		margin: 0;
+	}
+
+	&__privacy {
+		font-size: 0.85em !important;
 	}
 }
