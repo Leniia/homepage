@@ -13,5 +13,5 @@ Neben meinen Auftritten mit Coverliedern schreibe und veröffentliche ich eigene
 ### Zuhören
 
 <div class="page-video page-video--spotify">
-<iframe src="https://open.spotify.com/embed/track/0XotjQ8PBU4Oa7xT5rBeOL?utm_source=generator" title="Lenia — Song auf Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe src="https://open.spotify.com/embed/track/0XotjQ8PBU4Oa7xT5rBeOL?utm_source=generator" title="Lenia — Song auf Spotify" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
