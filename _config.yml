@@ -25,6 +25,10 @@ country: Deutschland
 # Until you set a real endpoint, submissions will not be delivered.
 formspree_endpoint: "https://formspree.io/f/xvzevplv"
 
+# Legal pages (footer links)
+impressum_url: "https://links.leniamusic.com/impressum"
+datenschutz_url: "https://links.leniamusic.com/datenschutz"
+
 # social settings (key must match Font Awesome 6 Brands icon name, e.g. Tiktok -> fa-tiktok)
 # see https://fontawesome.com/search?o=r&f=brands
 # Icons are not shown if value is empty
