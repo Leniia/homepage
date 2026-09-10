@@ -101,4 +101,19 @@ body.is-page {
 		display: block;
 		margin: 0;
 	}
+
+	&--spotify {
+		aspect-ratio: auto;
+		height: 352px;
+		max-height: 352px;
+		background: transparent;
+		overflow: hidden;
+		border-radius: 12px;
+
+		iframe {
+			border-radius: 12px;
+			aspect-ratio: auto;
+			height: 100%;
+		}
+	}
 }
